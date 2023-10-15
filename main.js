@@ -3,7 +3,6 @@ function rating(div) {
     let curr_sel = document.querySelector('.bg-circle.selected');
     if (curr_sel) curr_sel.classList.remove('selected');
     num = div.getAttribute("data-tip");
-    console.log(num)
     div.classList.add("selected")
     document.querySelector("button").removeAttribute("disabled");
     document.getElementById('your-rating').innerText = "You selected " + num + "  out of 5";
@@ -28,7 +27,6 @@ function submit() {
     document.querySelector(".your-rating").classList.add("show");
     let head = document.getElementsByTagName('HEAD')[0];
     let link = document.createElement('link');
-    console.log("cum")
     link.rel = 'stylesheet';
     link.type = 'text/css'; 
     link.href = 'thank-you.css';
