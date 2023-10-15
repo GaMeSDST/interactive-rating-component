@@ -1,0 +1,146 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--very-dark-blue);
+    color: white;
+}
+
+.main {
+    background: linear-gradient(0deg, hsl(215, 27%, 12%) 0%, hsl(215, 22%, 15%) 100%);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 362px;
+}
+
+.header {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.sub {
+    line-height: 22px;
+    margin-top: 10px;
+    color: var(--light-grey);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+svg {
+    position: absolute;
+ 
+}
+
+.bg-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(214, 14%, 22%);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.rating-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    font-weight: 700;
+    color: var(--light-grey);
+}
+
+.rating-container .bg-circle:hover {
+    background:var(--orange);
+    color: var(--white);
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background: var(--orange);
+    color: var(--white);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+button:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+.selected {
+    background: var(--light-grey);
+    color: white;
+}
+
+.text-center {
+    text-align: center !important;
+    padding-top: 11px;
+}
+
+.your-rating {
+    width: 190px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 380px){
+    .main {
+        width: 300px;
+        padding: 20px;
+    }
+    
+    #svg-delete {
+        left: 0px;
+        top: 8px;
+    }
+
+    .sub {
+        font-size: 13px;
+    }
+
+    .rating-container {
+        gap: 22px;
+    }
+
+    .bg-circle {
+        width: 35px;
+        height: 35px;
+    }
+}

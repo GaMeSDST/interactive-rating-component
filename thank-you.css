@@ -1,0 +1,62 @@
+@media screen and (min-width: 380){
+    .main {
+        height: 350px;
+        padding: 24px;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#svg-delete {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.main-content {
+    margin-top: 120px;
+}
+
+svg {
+    width: 163px;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.your-rating {
+    margin-left: 75px;
+    margin-top: 33px;
+    height: 23px;
+    width: 160px;
+    padding-top: 4px;
+    font-size: 13px;
+    color: var(--orange);
+}
+
+@media screen and (max-width: 380px){
+    .main {
+        width: 300px;
+    }
+    
+    .your-rating {
+        margin-left: 50px;
+    }
+
+    #svg-delete {
+        left: 65px;
+        top: 45px;;
+    }
+
+    .sub {
+        font-size: 12px;
+    }
+}
